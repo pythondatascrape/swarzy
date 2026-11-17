@@ -1,0 +1,19 @@
+[project]
+name = "swarzy"
+version = "0.1.0"
+description = "Answers an Archon coding-loop run's pauses unattended, following the archon-monitor skill"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+swarzy = "swarzy.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
